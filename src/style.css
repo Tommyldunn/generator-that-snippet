@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Inconsolata:400,700');
-
 :root {
   --color: #1278BD;
   --gray: #bbb;
@@ -16,7 +15,7 @@ html {
 }
 
 ::selection {
-  background: var(--color);
+  background-color: var(--color);
   color: #fff;
   text-shadow: none;
 }
@@ -38,17 +37,17 @@ body {
   0% {
     transform: none;
   }
-
   50% {
     transform: translate3d(2px, 0, 0);
   }
-
   100% {
     transform: none;
   }
 }
 
+
 /* app */
+
 .app {
   display: flex;
   flex-direction: column;
@@ -65,9 +64,9 @@ body {
 
 .app__title {
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 2rem;
   line-height: 3.2rem;
-text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .app__description {
@@ -118,9 +117,12 @@ text-transform: uppercase;
 }
 
 .app__main {
+  position: relative;
   display: flex;
   flex-grow: 1;
+  justify-content: center;
 }
+
 
 /* btn */
 
@@ -130,31 +132,34 @@ text-transform: uppercase;
   border: 0;
   border-radius: var(--radius);
   outline: 0;
-  background: var(--gray);
+  background-color: var(--gray);
   color: #fff;
-  font: inherit;
+  font-weight: bold;
   box-shadow: none;
   cursor: pointer;
+  font-size: .9rem;
 }
 
 .btn--active {
-  background: var(--color);
+  background-color: var(--color);
   animation-name: pop;
   animation-duration: var(--ms);
   animation-fill-mode: both;
+  color: #333;
 }
 
 .btn--vscode:hover {
-  background: #1278BD;
+  background-color: #3092EC;
 }
 
 .btn--sublimetext:hover {
-  background: #FF9800;
+  background-color: #FB8084;
 }
 
 .btn--atom:hover {
-  background: #40a977;
+  background-color: #26FA9A;
 }
+
 
 /* input */
 
@@ -176,7 +181,6 @@ text-transform: uppercase;
   border: 1px solid var(--color);
 }
 
-
 .input:focus {
   border: 1px solid var(--color);
   animation-name: pop;
@@ -192,7 +196,7 @@ text-transform: uppercase;
   border: 1px solid var(--gray);
   border-radius: var(--radius);
   outline: 0;
-  background: #fff;
+  background-color: #fff;
   color: inherit;
   font: inherit;
   overflow: auto;
@@ -201,7 +205,6 @@ text-transform: uppercase;
   -ms-user-select: all;
   -webkit-user-select: all;
   user-select: all;
-  /*white-space: pre-wrap;*/
 }
 
 .info {
@@ -224,10 +227,12 @@ text-transform: uppercase;
   text-decoration: none;
 }
 
+
 /* copy */
+
 .copy {
   position: absolute;
-  right: .8rem;
+  width: 95%;
   bottom: .8rem;
   height: 3.2rem;
   padding: 0 1.6rem;
@@ -235,9 +240,10 @@ text-transform: uppercase;
   border: 0;
   border-radius: var(--radius);
   outline: 0;
-  background: var(--color);
+  background-color: var(--color);
   color: #fff;
-  font: inherit;
   box-shadow: none;
   cursor: pointer;
+  font-size: .9rem;
+  font-weight: bold;
 }
