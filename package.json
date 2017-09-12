@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server --config webpack.config.dev.js --open",
-    "build": "webpack --config webpack.config.prod.js"
+    "serve:development": "webpack-dev-server --config webpack.config.dev.js --open",
+    "build:production": "webpack --config webpack.config.prod.js"
   },
   "keywords": [],
   "author": "Tommy Dunn <tommylogandunn@gmail.com> (https://www.tommyldunn.com/)",

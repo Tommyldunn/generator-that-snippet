@@ -40,13 +40,13 @@ class App extends Component {
 
   updateMode(mode) {
     if (mode === 'vscode') {
-      document.documentElement.style.setProperty('--color', '#1278BD');
+      document.documentElement.style.setProperty('--color', '#3092EC');
     }
     else if (mode === 'sublimetext') {
-      document.documentElement.style.setProperty('--color', '#FF9800');
+      document.documentElement.style.setProperty('--color', '#FB8084');
     }
     else if (mode === 'atom') {
-      document.documentElement.style.setProperty('--color', '#40a977');
+      document.documentElement.style.setProperty('--color', '#26FA9A');
     }
 
     this.setState({
